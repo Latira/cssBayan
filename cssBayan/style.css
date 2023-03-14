@@ -1,28 +1,36 @@
+/* html {
+    scroll-behavior: smooth;
+} */
+
 body {
     background-color: #EDC9EA;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin: 10 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*.wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-} */
+}
 
 header {
-    /* display: flex; */
     border-bottom: rgb(159, 158, 158) 2px solid;
-    /* align-items: start;
-    margin: 0; */
 }
 
 h1 {
     font-weight: 900;
+}
+
+details summary {
+    cursor: pointer;
+    transition: margin 1s ease-out;
+}
+
+details[open] summary {
+    margin-bottom: 10px;
 }
 
 .meme {
@@ -36,6 +44,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 900px;
+    /* cursor: pointer; */
 }
 
 h2 {
